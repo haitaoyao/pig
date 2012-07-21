@@ -232,8 +232,10 @@
   
     <target name="ant-eclipse-download" unless="ant-eclipse.jar.exists"
             description="Downloads the ant-eclipse binary.">
+	    <!--
       <get src="http://downloads.sourceforge.net/project/ant-eclipse/ant-eclipse/1.0/ant-eclipse-1.0.bin.tar.bz2"
            dest="${build.dir}/ant-eclipse-1.0.bin.tar.bz2" usetimestamp="false" />
+	   -->
   
       <untar src="${build.dir}/ant-eclipse-1.0.bin.tar.bz2"
              dest="${build.dir}" compression="bzip2">
